@@ -83,7 +83,7 @@ npm run dev
 ### 4. Access the App
 - **Lead Form**: `http://localhost:3000/lead`
 - **Dashboard**: `http://localhost:3000/dashboard`
-- **Backend API Docs**: `http://localhost:8000/docs`
+- **Backend API Docs**: `https://leed-managemenet-1.onrender.com/docs`
 
 ---
 
@@ -103,7 +103,7 @@ npm run dev
 ### Frontend (`frontend/.env.local`)
 | Variable | Description |
 |---|---|
-| `NEXT_PUBLIC_API_URL` | URL of the FastAPI backend (e.g., `http://localhost:8000`) |
+| `NEXT_PUBLIC_API_URL` | URL of the FastAPI backend (e.g., `https://leed-managemenet-1.onrender.com`) |
 
 ---
 
