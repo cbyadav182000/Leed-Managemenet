@@ -122,7 +122,7 @@ function EmptyChart({ message }: { message: string }) {
 // Main Component
 // ─────────────────────────────────────────
 export function Charts({ stats, isLoading }: ChartsProps) {
-  if (isLoading) {
+  if (isLoading || !stats) {
     return (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <ChartSkeleton />
