@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     FROM_NAME: str = "Lead Management System"
 
     # Application URLs
-    API_BASE_URL: str = "http://localhost:8000"
+    API_BASE_URL: str = "https://leed-managemenet-1.onrender.com"
     CLIENT_URL: str = "http://localhost:3000"
     CLICK_REDIRECT_URL: str = "https://google.com"
 
