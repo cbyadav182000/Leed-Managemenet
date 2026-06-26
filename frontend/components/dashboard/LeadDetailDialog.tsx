@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Lead } from "@/types";
 import {
@@ -8,7 +7,6 @@ import {
   formatDateTime,
   getPriorityColor,
   getCategoryColor,
-  truncate,
 } from "@/lib/utils";
 
 interface LeadDetailDialogProps {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import type { Lead, LeadFilters } from "@/types";
 import { formatDate, getCategoryColor, getPriorityColor } from "@/lib/utils";
 import { LeadDetailDialog } from "./LeadDetailDialog";

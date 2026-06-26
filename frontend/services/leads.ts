@@ -1,7 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import api from "./api";
 import type {
-  Lead,
   LeadCreatePayload,
   LeadCreateResponse,
   PaginatedLeadsResponse,

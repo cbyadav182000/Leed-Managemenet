@@ -10,7 +10,7 @@ type ToastProps = {
 };
 
 let memoryState: ToastProps[] = [];
-let listeners: React.Dispatch<React.SetStateAction<ToastProps[]>>[] = [];
+const listeners: React.Dispatch<React.SetStateAction<ToastProps[]>>[] = [];
 
 export function useToast() {
   const [toasts, setToasts] = useState<ToastProps[]>(memoryState);

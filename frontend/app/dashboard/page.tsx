@@ -38,7 +38,7 @@ export default function DashboardPage() {
         title: "Export Successful",
         description: "Your CSV file has been downloaded.",
       });
-    } catch (error) {
+    } catch {
       toast({
         title: "Export Failed",
         description: "Could not export leads. Please try again.",
@@ -54,10 +54,13 @@ export default function DashboardPage() {
         title: "AI Analysis Complete",
         description: result.message,
       });
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const msg = error && typeof error === "object" && "userMessage" in error 
+        ? (error as { userMessage: string }).userMessage 
+        : "Failed to analyze leads.";
       toast({
         title: "Analysis Failed",
-        description: error?.userMessage || "Failed to analyze leads.",
+        description: msg,
         variant: "destructive",
       });
     }
